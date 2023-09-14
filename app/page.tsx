@@ -1,18 +1,19 @@
 import Image from "next/image";
 import Posts from "./components/Posts";
+import MyProfilePic from "./components/MyProfilePic";
 
-export const revalidate = 10; // 86400; // one day
+export const revalidate = 86400; // one day
 
 export default function Home() {
   return (
-    <main className="px-6 mx-auto">
+    <div className="mx-auto">
       <p className="mt-12 mb-12 text-3xl text-center dark:text-white">
         Hello and Welcome 👏&nbsp;
         <span className="whitespace-nowrap">
-          I&apos;m <span className="font-bold">Ajay</span>
+          I'm <span className="font-bold">Ajay</span>
         </span>
       </p>
       <Posts />
-    </main>
+    </div>
   );
 }

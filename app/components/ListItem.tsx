@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import getFormattedDate from "@/lib/getFormatedDate";
+import { Meta } from "@/types";
 
 type Props = {
-  post: BlogPost;
+  post: Meta;
 };
 
 const ListItem = ({ post }: Props) => {
