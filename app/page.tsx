@@ -7,6 +7,7 @@ export const revalidate = 86400; // one day
 export default function Home() {
   return (
     <div className="mx-auto">
+      <MyProfilePic />
       <p className="mt-12 mb-12 text-3xl text-center dark:text-white">
         Hello and Welcome 👏&nbsp;
         <span className="whitespace-nowrap">
